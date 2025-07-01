@@ -1,4 +1,6 @@
-import step2.sorting1.selectionsort.Solution;
+
+
+import step2.sorting2.quicksort.Solution;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,7 +13,7 @@ public class Main {
         Scanner in = new Scanner(file);
         Solution solution = new Solution();
         int []arr = { 4, 1, 3, 9, 7 };
-        solution.selectionSort(arr);
+        solution.quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
 }
